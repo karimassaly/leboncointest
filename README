@@ -1,0 +1,31 @@
+*****************************
+*                           *
+*  Leboncoin Test Project   *               
+*                           *
+*****************************
+
+This file is meant to explain multiples points about the coding process.
+
+I have coded everything up to the bonus level. It is for this purpose that i needed to use a persistent storage such as the database Postgresql. Everything statistics oriented is directly stored inside this database.
+
+First and foremost to be able to run our program we will need our persistent storage. To create the docker database container
+our Makefile has the make store command.
+
+Run : 
+
+$make store
+
+Now that we have our persistent storage up and running, we can launch our API that contains our endpoints.
+
+Run : 
+
+$make run
+
+Our software uses multiple external packages such as : 
+
+- Gorm https://gorm.io/
+- Gin Gonic https://github.com/gin-gonic/gin
+
+Gorm helps us communicate with our database and provide information directly to our software.
+Gin Gonic helps building the router.
+

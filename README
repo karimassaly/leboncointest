@@ -8,6 +8,18 @@ This file is meant to explain multiples points about the coding process.
 
 I have coded everything up to the bonus level. It is for this purpose that i needed to use a persistent storage such as the database Postgresql. Everything statistics oriented is directly stored inside this database.
 
+Before we start running our program, we will need to create a .env file at the root of the project to be able to have our envrionment variables for our database. The .env file should contain the following : 
+
+POSTGRES_HOST = 
+POSTGRES_DB = 
+POSTGRES_USER = 
+POSTGRES_PASSWORD = 
+POSTGRES_PORT = 
+
+Our program will directly fetch the database credentials from the environment variables above.
+
+Now let's start the program.
+
 First and foremost to be able to run our program we will need our persistent storage. To create the docker database container
 our Makefile has the make store command.
 
